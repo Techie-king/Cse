@@ -1,0 +1,30 @@
+download and install java 8 from:
+
+https://www.oracle.com/java/technologies/downloads/#java8-windows
+
+download "jdk-8u401-windows-x64.exe" from windows in Java SE Development Kit 8u401.
+
+install by changing the installation location as:
+install jre in c:\Java
+install jdk in C:\Java\jsk-1.8
+add JAVA_HOME=C:\Java\jsk-1.8 in environment variable
+add C:\Java\jsk-1.8\bin in path
+
+verify the installation in cmd using "java -version" keyword.
+the output for valid installation is
+
+java version "1.8.0_401"
+Java(TM) SE Runtime Environment (build 1.8.0_401-b10)
+Java HotSpot(TM) 64-Bit Server VM (build 25.401-b10, mixed mode)
+
+download and extract hadoop-3.3.4 from:
+https://archive.apache.org/dist/hadoop/common/hadoop-3.3.4/hadoop-3.3.4.tar.gz
+
+extract the file at c:\hadoop-3.3.4
+replace the bin,data and etc folder from the bin,etc,data.rar in the rar file from above.
+
+type hdfs namenode -format in cmd at c:/hadoop-3.3.4/bin
+
+type start-all.cmd in cmd at c:/hadoop-3.3.4/sbin
+
+check if the hadoop is running or not by typing localhost:8088 and localhost:9870 in browser
